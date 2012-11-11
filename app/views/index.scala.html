@@ -1,7 +1,23 @@
 @(message: String)
 
+
+
 @main("Welcome to Play 2.0") {
-    
-    @play20.welcome(message)
+    <link rel="stylesheet" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+    <div align = "center" style="margin-top: 50px">
+		<form>
+		  <fieldset>
+		    <legend>Legend</legend>
+		    <label>Label name</label>
+		    <input type="text" placeholder="Type something…">
+		    <span class="help-block">Example block-level help text here.</span>
+		    <label class="checkbox">
+		      <input type="checkbox"> Check me out
+		    </label>
+		    <button type="submit" class="btn btn-inverse">Submit</button>
+		  </fieldset>
+		</form>
+		
+	</div>
     
 }
